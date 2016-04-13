@@ -183,7 +183,7 @@ public class EditTextPassword extends AppCompatEditText {
     }
 
     /**
-     * @return a boolean value indicating if the password is being shown or not
+     * @return a boolean value indicating whether the password is being shown or not
      */
     public boolean isPasswordVisible() {
         return isPasswordVisible;

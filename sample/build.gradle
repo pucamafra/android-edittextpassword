@@ -20,6 +20,6 @@ android {
 }
 
 dependencies {
-    compile project(':library')
+    compile project(':edittext-password')
     compile 'com.android.support:design:23.2.1'
 }
