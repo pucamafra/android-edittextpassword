@@ -119,10 +119,6 @@ public class EditTextPassword extends AppCompatEditText {
             switch (this.iconPosition) {
                 case LEFT: {
                     int iconWidth = this.icon.getBounds().width();
-                    System.out.println("width: " + getWidth());
-                    System.out.println("Image width: " + iconWidth);
-                    System.out.println("X: " + x);
-                    System.out.println("this.getWidth() - Image width: " + (this.getWidth() - iconWidth));
                     if (x >= getPaddingLeft() && x <= getPaddingLeft() + iconWidth) {
                         togglePassword();
                         event.setAction(MotionEvent.ACTION_CANCEL);
@@ -131,10 +127,6 @@ public class EditTextPassword extends AppCompatEditText {
                 }
                 case RIGHT: {
                     int iconWidth = this.icon.getBounds().width();
-                    System.out.println("width: " + getWidth());
-                    System.out.println("Image width: " + iconWidth);
-                    System.out.println("X: " + x);
-                    System.out.println("this.getWidth() - Image width: " + (this.getWidth() - iconWidth));
                     if (x >= (getWidth() - getPaddingLeft()) - iconWidth && x <= getWidth() + iconWidth - getPaddingRight()) {
                         togglePassword();
                         event.setAction(MotionEvent.ACTION_CANCEL);
