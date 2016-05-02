@@ -30,7 +30,7 @@ repositories {
 }
 
 dependencies {
-	   compile 'com.marlon.android.widget:edittext-password:1.0.0'
+	   compile 'com.marlonmafra.android.widget:edittext-password:1.0.0'
 }
 ```
 
