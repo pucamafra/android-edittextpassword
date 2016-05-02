@@ -46,6 +46,12 @@ dependencies {
 </dependency>
 ```
 
+**3. Ivy**
+
+ ```xml
+<dependency org='com.marlonmafra.android.widget' name='edittext-password' rev='1.0.0'/>
+```
+
 # Sample usage
 
 It works like a EditText.
