@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="marlon.com.sample.MainActivity">
+    tools:context="com.marlonmafra.sample.MainActivity">
 
     <TextView
         android:layout_width="match_parent"
@@ -16,7 +16,7 @@
         android:layout_marginTop="20dp"
         android:text="EditTextPassword - Right" />
 
-    <com.marlon.android.widget.EditTextPassword
+    <com.marlonmafra.android.widget.EditTextPassword
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginEnd="20dp"
@@ -48,7 +48,7 @@
         android:layout_marginStart="20dp"
         android:textColorHint="@android:color/darker_gray">
 
-        <com.marlon.android.widget.EditTextPassword
+        <com.marlonmafra.android.widget.EditTextPassword
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Password"
@@ -71,7 +71,7 @@
         android:layout_marginTop="20dp"
         android:text="EditTextPassword - Left" />
 
-    <com.marlon.android.widget.EditTextPassword
+    <com.marlonmafra.android.widget.EditTextPassword
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginEnd="20dp"
@@ -103,7 +103,7 @@
         android:layout_marginStart="20dp"
         android:textColorHint="@android:color/darker_gray">
 
-        <com.marlon.android.widget.EditTextPassword
+        <com.marlonmafra.android.widget.EditTextPassword
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Password"

@@ -11,7 +11,7 @@ android {
     buildToolsVersion "23.0.3"
 
     defaultConfig {
-        applicationId "marlon.com.sample"
+        applicationId "com.marlonmafra.sample"
         minSdkVersion 14
         versionCode 1
         versionName "1.0"
@@ -26,5 +26,6 @@ android {
 
 dependencies {
     compile 'com.android.support:design:23.2.1'
-    compile 'com.marlon.android.widget:edittext-password:1.0.0'
+   // compile 'com.marlon.android.widget:edittext-password:1.0.0'
+    compile project(':edittext-password')
 }

@@ -16,7 +16,7 @@ ext {
     bintrayRepo = 'maven'
     bintrayName = 'edittext-password'
 
-    publishedGroupId = 'com.marlon.android.widget'
+    publishedGroupId = 'com.marlonmafra.android.widget'
     libraryName = 'Android - EditTextPassword'
     artifact = 'edittext-password'
 

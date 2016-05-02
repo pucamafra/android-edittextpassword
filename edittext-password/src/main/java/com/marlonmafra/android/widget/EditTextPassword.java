@@ -1,4 +1,4 @@
-package com.marlon.android.widget;
+package com.marlonmafra.android.widget;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -13,7 +13,7 @@ import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.inputmethod.EditorInfo;
 
-import com.marlon.android.widget.utils.FontCache;
+import com.marlonmafra.android.widget.utils.FontCache;
 
 public class EditTextPassword extends AppCompatEditText {
 

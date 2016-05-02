@@ -1,4 +1,4 @@
-package marlon.com.sample;
+package com.marlonmafra.sample;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
