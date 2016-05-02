@@ -57,7 +57,7 @@ dependencies {
 It works like a EditText.
 
 ```xml
-  <com.marlon.android.widget.EditTextPassword
+  <com.marlonmafra.android.widget.EditTextPassword
          android:layout_width="match_parent"
          android:layout_height="wrap_content"
          android:hint="Password"
