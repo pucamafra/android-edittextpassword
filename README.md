@@ -1,6 +1,8 @@
 android-edittextpassword
 ===============
 
+[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-android--edittextpassword-brightgreen.svg?style=flat)](http://android-arsenal.com/details/1/3548)
+
 EditTextPassword is a Android library that allows to show/hide the password in the EditText. You can set a icon on the right or on the left side of the Edit Text.
 The icon works like a toggle, once clicked it show/hide the password.
 
