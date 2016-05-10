@@ -1,3 +1,5 @@
+<img width="80" src="./screenshots/library-logo.png" />
+
 android-edittextpassword
 ===============
 
