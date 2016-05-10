@@ -26,6 +26,5 @@ android {
 
 dependencies {
     compile 'com.android.support:design:23.2.1'
-   // compile 'com.marlon.android.widget:edittext-password:1.0.0'
-    compile project(':edittext-password')
+    compile 'com.marlonmafra.android.widget:edittext-password:1.0.0'
 }
