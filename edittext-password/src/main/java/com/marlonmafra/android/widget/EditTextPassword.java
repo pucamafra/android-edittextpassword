@@ -17,6 +17,8 @@ import com.marlonmafra.android.widget.utils.FontCache;
 
 public class EditTextPassword extends AppCompatEditText {
 
+    private final String ANDROID_NAMESPACE = "http://schemas.android.com/apk/res/android";
+
     private final int TEXT_PASSWORD = 129;
     private final int NUMBER_PASSWORD = 18;
 
@@ -28,6 +30,11 @@ public class EditTextPassword extends AppCompatEditText {
     private int showPasswordIcon;
     private int hidePasswordIcon;
     private int inputType;
+
+    private int drawableLeftIcon;
+    private int drawableRightIcon;
+    private int drawableTopIcon;
+    private int drawableBottomIcon;
 
     public EditTextPassword(Context context, AttributeSet attrs) {
         super(context, attrs);
@@ -50,6 +57,11 @@ public class EditTextPassword extends AppCompatEditText {
             this.iconPosition = IconPosition.values()[typedArray.getInteger(R.styleable.EditTextPassword_iconPosition, IconPosition.RIGHT.ordinal())];
             this.showPasswordIcon = typedArray.getResourceId(R.styleable.EditTextPassword_showPasswordIcon, R.drawable.ic_show_password);
             this.hidePasswordIcon = typedArray.getResourceId(R.styleable.EditTextPassword_hidePasswordIcon, R.drawable.ic_hide_password);
+
+            this.drawableLeftIcon = attrs.getAttributeResourceValue(ANDROID_NAMESPACE, "drawableLeft", -1);
+            this.drawableRightIcon = attrs.getAttributeResourceValue(ANDROID_NAMESPACE, "drawableRight", -1);
+            this.drawableTopIcon = attrs.getAttributeResourceValue(ANDROID_NAMESPACE, "drawableTop", -1);
+            this.drawableBottomIcon = attrs.getAttributeResourceValue(ANDROID_NAMESPACE, "drawableBottom", -1);
 
             String path = typedArray.getString(R.styleable.EditTextPassword_fontPath);
             if (path != null) {
@@ -97,14 +109,19 @@ public class EditTextPassword extends AppCompatEditText {
     }
 
     private void setupIcon() {
+        Drawable left = this.drawableLeftIcon != -1 ? getDrawable(this.drawableLeftIcon) : null;
+        Drawable right = this.drawableRightIcon != -1 ? getDrawable(this.drawableRightIcon) : null;
+        Drawable top = this.drawableTopIcon != -1 ? getDrawable(this.drawableTopIcon) : null;
+        Drawable bottom = this.drawableBottomIcon != -1 ? getDrawable(this.drawableBottomIcon) : null;
+
         this.icon = this.isPasswordVisible ? getDrawable(this.showPasswordIcon) : getDrawable(hidePasswordIcon);
         switch (this.iconPosition) {
             case LEFT: {
-                setCompoundDrawablesWithIntrinsicBounds(this.icon, null, null, null);
+                setCompoundDrawablesWithIntrinsicBounds(this.icon, top, right, bottom);
                 break;
             }
             case RIGHT: {
-                setCompoundDrawablesWithIntrinsicBounds(null, null, this.icon, null);
+                setCompoundDrawablesWithIntrinsicBounds(left, top, this.icon, bottom);
                 break;
             }
         }
